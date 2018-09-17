@@ -1,0 +1,37 @@
+<!--header-->
+<div class="header header-main">
+	<div class="container">
+				<div class="header-top">
+				<div class="logo">
+					<h1><a href="index.html">Music Spot</a></h1>
+				</div>
+				<div class="top-nav">
+					<span class="menu"><img src="images/menu.png" alt=""> </span>
+					<ul>
+
+
+						<li ><a href="<%=menu[0].href%>" class="hvr-sweep-to-bottom color"><i class="glyphicon glyphicon-home"></i><%=menu[0].text%>  </a> </li>
+
+						<li ><a href="<%=menu[1].href%>" class="hvr-sweep-to-bottom color1"><i class="glyphicon glyphicon-picture"></i><%=menu[1].text%> </a> </li>
+
+						<li><a href="<%=menu[2].href%>"  class="hvr-sweep-to-bottom color2"><i class="glyphicon glyphicon-tags"></i><%=menu[2].text%></a></li>
+
+						<li><a href="<%=menu[3].href%>" class="hvr-sweep-to-bottom color3"><i class="glyphicon glyphicon-calendar"></i><%=menu[3].text%> </a></li>
+
+						<li style="margin-right:55px;"><a href="<%=menu[4].href%>" class="hvr-sweep-to-bottom color4"><i class="glyphicon glyphicon-envelope"></i> <%=menu[4].text%> </a></li>
+
+		<div class="clearfix"> </div>
+
+					</ul>
+					<script>
+					$("span.menu").click(function(){
+						$(".top-nav ul").slideToggle(500, function(){
+						});
+					});
+			</script>				
+				</div>
+			<div class="clearfix"> </div>
+		</div>
+			<!---->
+	</div>
+</div>

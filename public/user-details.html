@@ -1,0 +1,414 @@
+<!doctype html>
+<html>
+<head>
+<title>Music Club A Music Category Flat Bootstarp Resposive Website Template | Home :: w3layouts</title>
+<link href="../public/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<!--theme-style-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />  
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Music Club Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</head>
+  <body>
+<div class="container">
+ <div id="login">
+       
+<div class="header">
+  <div class="container">
+      <div class="header-top">
+        <div class="logo">
+          <h1><a href="index.html">Music Spot</a></h1>
+        </div>
+        <div class="top-nav">
+          <span class="menu"><img src="./public/images/menu.png" alt=""> </span>
+          <ul>
+
+
+            <li ><a href="/index" class="hvr-sweep-to-bottom color"><i class="glyphicon glyphicon-home"></i>Home </a> </li>
+
+            <li ><a href="/signup" class="hvr-sweep-to-bottom color1"><i class="glyphicon glyphicon-picture"></i>Playlist </a> </li>
+
+            <li><a href="/user-details"  class="hvr-sweep-to-bottom color2"><i class="glyphicon glyphicon-tags"></i>Books</a></li>
+
+            <li><a href="/login" class="hvr-sweep-to-bottom color3"><i class="glyphicon glyphicon-calendar"></i>Signup</a></li>
+
+            <li style="margin-right:55px;"><a href="/login" class="hvr-sweep-to-bottom color4"><i class="glyphicon glyphicon-envelope"></i> Login </a></li>
+
+    <div class="clearfix"> </div>
+
+          </ul>
+          <!--script-->
+        <script>
+          $("span.menu").click(function(){
+            $(".top-nav ul").slideToggle(500, function(){
+            });
+          });
+      </script>       
+        </div>
+      <div class="clearfix"> </div>
+    </div>
+      <div class="banner-main">
+    <section class="slider">
+           <div class="flexslider">
+             <ul class="slides">
+           <li>
+            <div class="banner-matter">
+              <h3>Consectetur adipisicing elit</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div>
+           </li>
+            <li>
+            <div class="banner-matter">
+              <h3>Consectetur adipisicing elit</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>           </div>
+           </li>
+            <li>
+            <div class="banner-matter">
+              <h3>Consectetur adipisicing elit</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>           </div>
+           </li>
+          </ul>
+        </div>
+      </section>
+
+  </div>
+
+<!--FlexSlider-->
+  <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+  <script defer src="js/jquery.flexslider.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+  </div>
+</div>
+
+
+<!--//header-->
+
+<!--content-->
+<div class="content">
+  <div class="container">
+    <!--content-top-->
+    <script id="user-profile-template" type="text/x-handlebars-template">
+      <h1>Logged in as {{display_name}}</h1>
+      <div class="media">
+        <div class="pull-left">
+          <img class="media-object" width="150" src="{{images.0.url}}" />
+        </div>
+        <div class="media-body">
+          <dl class="dl-horizontal">
+            <dt>Display name</dt><dd class="clearfix">{{display_name}}</dd>
+            <dt>Id</dt><dd>{{id}}</dd>
+            <dt>Email</dt><dd>{{email}}</dd>
+            <dt>Spotify URI</dt><dd><a href="{{external_urls.spotify}}">{{external_urls.spotify}}</a></dd>
+            <dt>Link</dt><dd><a href="{{href}}">{{href}}</a></dd>
+            <dt>Profile Image</dt><dd class="clearfix"><a href="{{images.0.url}}">{{images.0.url}}</a></dd>
+            <dt>Country</dt><dd>{{country}}</dd>
+          </dl>
+        </div>
+      </div>
+    </script>
+
+    <script id="oauth-template" type="text/x-handlebars-template">
+      <h2>oAuth info</h2>
+      <dl class="dl-horizontal">
+        <dt>Access token</dt><dd class="text-overflow">{{access_token}}</dd>
+        <dt>Refresh token</dt><dd class="text-overflow">{{refresh_token}}</dd>
+      </dl>
+    </script>
+
+    <div class="content-top">
+    <table>
+    <tr>
+    <td>
+
+        <div class="col-md-7 content-top1">
+        <h3>Welcome</h3>
+
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text
+          , and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose,
+          
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to</p>
+      </div>
+    <br/><br/><br/><br/>
+
+    </td>
+    <td>
+    <div class="col-md-5 top-col">
+      
+      <table>
+      <div class="col1">
+        
+      <tr>
+        <td>
+            <div class="col-md-6 col2">
+            <img src="images/ic.png" alt="" >
+          </div>
+        
+        </td>
+
+        <td>
+            <div class="col-md-6 col3">
+            <img src="images/ic1.png" alt="" >
+          </div>
+    
+        </td>
+      </tr>
+        <div class="clearfix"> </div>
+        </div>
+      
+      <div class="col1">
+        
+      <tr>
+        <td>
+          <div class="col-md-6 col4">
+            <img src="images/ic2.png" alt="" >
+          </div>
+  
+        </td>
+        <td>
+          <div class="col-md-6 col5">
+            <img src="images/ic3.png" alt="" >
+          </div>
+        
+        </td>
+
+      </tr>
+        <div class="clearfix"> </div>
+    </div>
+    
+      </table>
+  </div>
+    
+
+
+    </td>
+    </tr>
+    </table>
+
+      <div class="clearfix"> </div>
+    </div>
+    <!--//content-top-->
+    <!--content-mid-->
+    <table>
+    <div class="content-mid">
+  
+    <tr>
+      <td>
+      <div class="col-md-4 mid" style="padding-left:35px;">
+        <a href="single.html"><img src="images/1.jpg" alt="" class="img-responsive">
+        <div class="mid1">
+          <h4>My Album</h4>
+          <i class="glyphicon glyphicon-circle-arrow-right"></i>
+          <div class="clearfix"> </div>
+        </div>
+        </a>
+      </div>
+
+      </td>
+
+
+      <td>
+        <div class="col-md-4 mid">
+        <a href="single.html"><img src="images/2.jpg" alt="" class="img-responsive">
+        <div class="mid1">
+          <h4>My Album</h4>
+          <i class="glyphicon glyphicon-circle-arrow-right"></i>
+          <div class="clearfix"> </div>
+        </div>
+        </a>
+      </div>
+    
+      </td>
+
+      <td>
+      <div class="col-md-4 mid">
+        <a href="single.html"><img src="images/4.jpg" alt="" class="img-responsive">
+        <div class="mid1">
+          <h4>My Album</h4>
+          <i class="glyphicon glyphicon-circle-arrow-right"></i>
+          <div class="clearfix"> </div>
+        </div>
+        </a>
+      </div>
+
+
+      </td>
+
+    </tr>
+
+        <div class="clearfix"> </div>
+    </div>
+  
+    </table>
+    <!--content-mid-->
+  </div>
+
+  <div class="content-bottom">
+    <div class="container">
+    <div class="content-bottom-top">
+    
+    <table>
+    <tr>
+    <td>
+        <div class="col-md-6 content-bottom-top1">
+          <h3>Kasertas lertyasea deeraeser</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia</p>
+        </div>
+  
+    </td>
+    <td>
+        <div class="col-md-6 bottom-co1">
+          <img class="img-responsive" src="images/3.jpg" alt="">
+
+        </div>
+    
+    </td>
+
+    </tr>
+      </div>
+  
+    </table>
+      </div>
+    </div>
+  <!---->
+</div>
+</div>
+
+
+<div id="loggedin">
+       <div id="user-profile">
+          <h1>savan</h1>
+        </div>
+        <div id="oauth">
+        
+        </div>
+</div>
+</div>
+    <script id="user-profile-template" type="text/x-handlebars-template">
+      <h1 style="color:white;">Logged in as {{display_name}}</h1>
+      <div class="media">
+        <div class="pull-left">
+          <img class="media-object" width="150" src="{{images.0.url}}" />
+        </div>
+        <div class="media-body">
+          <dl class="dl-horizontal">
+            <dt>Display name</dt><dd class="clearfix">{{display_name}}</dd>
+            <dt>Id</dt><dd>{{id}}</dd>
+            <dt>Email</dt><dd>{{email}}</dd>
+            <dt>Spotify URI</dt><dd><a href="{{external_urls.spotify}}">{{external_urls.spotify}}</a></dd>
+            <dt>Link</dt><dd><a href="{{href}}">{{href}}</a></dd>
+            <dt>Profile Image</dt><dd class="clearfix"><a href="{{images.0.url}}">{{images.0.url}}</a></dd>
+            <dt>Country</dt><dd>{{country}}</dd>
+          </dl>
+        </div>
+      </div>
+    </script>
+
+    <script id="oauth-template" type="text/x-handlebars-template">
+      <h2>oAuth info</h2>
+      <dl class="dl-horizontal">
+        <dt>Access token</dt><dd class="text-overflow">{{access_token}}</dd>
+        <dt>Refresh token</dt><dd class="text-overflow">{{refresh_token}}</dd>
+      </dl>
+    </script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.1/handlebars.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script>
+      (function() {
+
+        /**
+         * Obtains parameters from the hash of the URL
+         * @return Object
+         */
+        function getHashParams() {
+          var hashParams = {};
+          var e, r = /([^&;=]+)=?([^&;]*)/g,
+              q = window.location.hash.substring(1);
+          while ( e = r.exec(q)) {
+             hashParams[e[1]] = decodeURIComponent(e[2]);
+          }
+          return hashParams;
+        }
+
+        var userProfileSource = document.getElementById('user-profile-template').innerHTML,
+            userProfileTemplate = Handlebars.compile(userProfileSource),
+            userProfilePlaceholder = document.getElementById('user-profile');
+
+        var oauthSource = document.getElementById('oauth-template').innerHTML,
+            oauthTemplate = Handlebars.compile(oauthSource),
+            oauthPlaceholder = document.getElementById('oauth');
+
+        var params = getHashParams();
+
+        var access_token = params.access_token,
+            refresh_token = params.refresh_token,
+            error = params.error;
+
+        if (error) {
+          alert('There was an error during the authentication');
+        } else {
+          if (access_token) {
+            // render oauth info
+            oauthPlaceholder.innerHTML = oauthTemplate({
+              access_token: access_token,
+              refresh_token: refresh_token
+            });
+
+            $.ajax({
+                url: 'https://api.spotify.com/v1/me',
+                headers: {
+                  'Authorization': 'Bearer ' + access_token
+                },
+                success: function(response) {
+                  userProfilePlaceholder.innerHTML = userProfileTemplate(response);
+
+                  $('#login').hide();
+                  $('#loggedin').show();
+                }
+            });
+          } else {
+              // render initial screen
+              $('#login').show();
+              $('#loggedin').hide();
+          }
+
+          document.getElementById('obtain-new-token').addEventListener('click', function() {
+            $.ajax({
+              url: '/refresh_token',
+              data: {
+                'refresh_token': refresh_token
+              }
+            }).done(function(data) {
+              access_token = data.access_token;
+              oauthPlaceholder.innerHTML = oauthTemplate({
+                access_token: access_token,
+                refresh_token: refresh_token
+              });
+            });
+          }, false);
+        }
+      })();
+    </script>
+  </body>
+</html>
+

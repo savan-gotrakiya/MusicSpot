@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Music Club A Music Category Flat Bootstarp Resposive Website Template | Mail :: w3layouts</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<!--theme-style-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />  
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Music Club Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<!--flexslider-->
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+<!--//flexslider-->
+   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <style type="text/css">
+
+    table
+{
+    border-collapse:separate;
+    border-spacing:0 15px;
+
+}
+       </style>
+<!--header-->
+
+<!--//header--> 
+  <body>
+    <% include header2.ejs%>
+
+<center>
+  <div class="gallery">
+    <div class="container">
+          <h3>User Playlist</h3>
+    </div>
+</div>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(a)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = d.getElementById(link).value;
+  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+<table width="1200px;">
+  <tr>
+    <th width="50px;">Image</th>
+    <th width="100px;">Playlist Name</th>
+    <th width="150px;">Artist</th>
+    <th width="50px;">Song</th>
+    <th width="50px;"></th>
+    <th width="50px;"></th>
+  </tr>
+ <br>
+  <tr height="50px;">
+     <td><img src="<%= image %>" width="100px" height="100px"></td>
+     <td><%= album_name %></td>
+     <td><%= artist_name %></td>
+     <td><a href="<%= song %>" id="link"><%= song %></a></td>  
+     <td><div class="fb-share-button"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore" data-href="<%= song %>" ><img src="images/facebook.png" width="150px" height="50px"></a></div></td>
+     <td>
+  <a rel="me" class="twitter-share-button"
+  href="https://twitter.com/intent/tweet?text=<%= song %>"
+  data-size="large">
+  <img src="images/twitter.png" width="100px" height="40px">
+ </a>
+    </td>
+  </tr>
+ <tr height="50px;">
+     <td><img src="<%= image2 %>" width="100px" height="100px"></td>
+     <td><%= album_name2 %></td>
+     <td><%= artist_name2 %></td>
+     <td><a href="<%= song2 %>"><%= song2 %></a></td>  
+     <td><div class="fb-share-button"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore" data-href="<%= song %>" ><img src="images/facebook.png" width="150px" height="50px"></a></div>
+     <td>
+  <a rel="me" class="twitter-share-button"
+  href="https://twitter.com/intent/tweet?text=<%= song2 %>"
+  data-size="large">
+  <img src="images/twitter.png" width="100px" height="40px">
+ </a>
+    </td>
+  </tr>
+ <tr height="50px;">
+     <td><img src="<%= image3 %>" width="100px" height="100px"></td>
+     <td><%= album_name3 %></td>
+     <td><%= artist_name3 %></td>
+     <td><a href="<%= song4 %>"><%= song4 %></a></td>  
+     <td><div class="fb-share-button"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore" data-href="<%= song %>" ><img src="images/facebook.png" width="150px" height="50px"></a></div>
+     <td>
+  <a rel="me" class="twitter-share-button"
+  href="https://twitter.com/intent/tweet?text=<%= song3 %>"
+  data-size="large">
+  <img src="images/twitter.png" width="100px" height="40px">
+ </a>
+    </td>
+  </tr>
+ <tr height="50px;">
+     <td><img src="<%= image4 %>" width="100px" height="100px"></td>
+     <td><%= album_name4 %></td>
+     <td><%= artist_name4 %></td>
+     <td><a href="<%= song4 %>"><%= song4 %></a></td>  
+     <td><div class="fb-share-button"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore" data-href="<%= song %>" ><img src="images/facebook.png" width="150px" height="50px"></a></div>
+      <td>
+  <a rel="me" class="twitter-share-button"
+  href="https://twitter.com/intent/tweet?text=<%= song4 %>"
+  data-size="large">
+  <img src="images/twitter.png" width="100px" height="40px">
+ </a>
+    </td>
+     
+  </tr>
+ <tr height="50px;">
+     <td><img src="<%= image5 %>" width="100px" height="100px"></td>
+     <td><%= album_name5 %></td>
+     <td><%= artist_name5 %></td>
+     <td><a href="<%= song5 %>"><%= song5 %></a></td> 
+     <td><div class="fb-share-button"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore" data-href="<%= song %>" ><img src="images/facebook.png" width="150px" height="50px"></a></div>
+      <td>
+  <a rel="me" class="twitter-share-button"
+  href="https://twitter.com/intent/tweet?text=<%= song5 %>"
+  data-size="large">
+  <img src="images/twitter.png" width="100px" height="40px">
+ </a>
+    </td>
+      
+  </tr>
+ <tr height="50px;">
+     <td><img src="<%= image6 %>" width="100px" height="100px"></td>
+     <td><%= album_name6 %></td>
+     <td><%= artist_name6 %></td>
+     <td><a href="<%= song6 %>"><%= song6 %></a></td>  
+     <td><div class="fb-share-button"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore" data-href="<%= song %>" ><img src="images/facebook.png" width="150px" height="50px"></a></div>
+      <td>
+  <a rel="me" class="twitter-share-button"
+  href="https://twitter.com/intent/tweet?text=<%= song6 %>"
+  data-size="large">
+  <img src="images/twitter.png" width="100px" height="40px">
+ </a>
+    </td>
+
+     
+  </tr>
+ <tr height="50px;">
+     <td><img src="<%= image7 %>" width="100px" height="100px"></td>
+     <td><%= album_name7 %></td>
+     <td><%= artist_name7 %></td>
+     <td><a href="<%= song7 %>"><%= song7 %></a></td> 
+     <td><div class="fb-share-button"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore" data-href="<%= song %>" ><img src="images/facebook.png" width="150px" height="50px"></a></div>
+   <td>
+  <a rel="me" class="twitter-share-button"
+  href="https://twitter.com/intent/tweet?text=<%= song7 %>"
+  data-size="large">
+  <img src="images/twitter.png" width="100px" height="40px">
+ </a>
+    </td>
+      
+  </tr>
+ 
+</table>
+</center>
+
+
+    
+
+        <% include footer2.ejs%>
+  </body>
+</html>
+

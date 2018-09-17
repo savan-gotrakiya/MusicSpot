@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Music Club A Music Category Flat Bootstarp Resposive Website Template | Mail :: w3layouts</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<!--theme-style-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />  
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Music Club Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<!--flexslider-->
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+<!--//flexslider-->
+   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <style type="text/css">
+       </style>
+<!--header-->
+
+<!--//header--> 
+  <body>
+    <% include header2.ejs%>
+      
+      <center>
+        <h1 style="color:pink;">User's Currently Playing Track</h1>
+          <table>
+        <tr>
+          <td> <h3 style="color:blue;padding-left: 45px;" >Song:</h3></td>
+          <td> <h3 style="color:blue; padding-left: 25px;" ><%= title%></h3></td>
+        </tr>
+        <tr>
+          <td> <h3 style="color:blue;padding-left: 45px;" >Artist Name:</h3></td>
+          <td> <h3 style="color:blue; padding-left: 25px;" ><%= artist_name%></h3></td>
+        </tr>
+        <tr>
+          <td> <h3 style="color:blue;padding-left: 45px;" >Album Name</h3></td>
+          <td> <h3 style="color:blue; padding-left: 25px;" ><%= album_name%></h3></td>
+        </tr>
+        <tr>
+          <td> <h3 style="color:blue;padding-left: 45px;" > Album Link:</h3></td>
+          <td> <h3 style="color:blue; padding-left: 25px;" ><%= album_href %></h3></td>
+        </tr>
+        <tr>
+          <td> <h3 style="color:blue;padding-left: 45px;" >Timestamp:</h3></td>
+          <td> <h3 style="color:blue; padding-left: 25px;" ><%= timestamp%></h3></td>
+        </tr>
+        <tr>
+          <td> <h3 style="color:blue;padding-left: 45px;" >Progress Time:</h3></td>
+          <td> <h3 style="color:blue; padding-left: 25px;" ><%= progress_ms%></h3></td>
+        </tr>
+       <tr>
+          <td> <h3 style="color:blue;padding-left: 45px;" >Current Playing Status:</h3></td>
+          <td> <h3 style="color:blue; padding-left: 25px;" ><%= is_playing%></h3></td>
+        </tr>
+
+      </table>
+      
+      </center>
+        <% include footer2.ejs%>
+  </body>
+</html>
+
